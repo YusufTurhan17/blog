@@ -1,9 +1,8 @@
 import Container from "../components/Container";
 
-import Section, { SectionHeader } from "../components/section/Section";
+import Section from "../components/section/Section";
 import View from "../components/View";
 import Grid from "../components/Grid";
-import Title from "../components/Title";
 import Image from "../components/Image";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";

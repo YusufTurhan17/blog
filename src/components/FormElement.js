@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Input from "./Input";
 
 const StyledLabel = styled.label`
   /* color: #fff; */
