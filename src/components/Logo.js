@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledText = styled.span`
   font-size: 35px;
@@ -6,7 +7,8 @@ const StyledText = styled.span`
   letter-spacing: 5px;
   display: inline-block;
   position: relative;
-  width: 22%;
+  flex-shrink: 0;
+  color: ${({ theme }) => theme.color};
 
   &::after {
     content: "";
@@ -15,7 +17,6 @@ const StyledText = styled.span`
     height: 2px;
     background-color: ${({ theme }) => theme.color};
     margin-top: 7px;
-
     position: absolute;
     top: 100%;
     left: 0;
@@ -38,8 +39,10 @@ const StyledText = styled.span`
   }
 `;
 
-const Logo = () => {
-  return <StyledText>Yusuf Turhan</StyledText>;
-};
+const Logo = () => (
+  <Link className="flexShring0" to="/">
+    <StyledText>Yusuf Turhan</StyledText>
+  </Link>
+);
 
 export default Logo;
