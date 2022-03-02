@@ -5,13 +5,17 @@ const themes = {
   dark: {
     backgroundColor: "black",
     buttonbg: "white",
-    buttoncolor: "black",
+    buttonActivebg: "#f9cf47",
+    buttonColor: "black",
+    buttonActiveColor: "#fff",
     color: "white",
   },
   light: {
     backgroundColor: "white",
     buttonbg: "black",
-    buttoncolor: "white",
+    buttonActivebg: "#f9cf47",
+    buttonColor: "white",
+    buttonActiveColor: "#fff",
     color: "black",
   },
 };

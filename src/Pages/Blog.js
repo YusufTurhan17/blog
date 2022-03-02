@@ -86,7 +86,11 @@ const Blog = () => {
           <View display="flex" marginBottom="30px">
             {datacategory.map(({ lang, key }) => {
               return (
-                <Button key={key} onClick={() => changeCategory(key)}>
+                <Button
+                  key={key}
+                  active={activeCategory === key}
+                  onClick={() => changeCategory(key)}
+                >
                   {lang[i18n.language].title}
                 </Button>
               );
