@@ -1,0 +1,38 @@
+[{
+    "key": "kategori1",
+    "lang": {
+      "en": {
+        "title": "HTML"
+      },
+      "tr": {
+        "title": "HTML"
+      }
+    }
+  },
+  {
+    "key": "kategori2",
+    "lang": {
+      "en": {
+        "title": "CSS"
+
+      },
+      "tr": {
+        "title": "CSS"
+
+      }
+    }
+  },
+  {
+    "key": "kategori3",
+    "lang": {
+      "en": {
+        "title": "JAVASCRİPT"
+
+      },
+      "tr": {
+        "title": "JAVASCRİPT"
+
+      }
+    }
+  }
+]

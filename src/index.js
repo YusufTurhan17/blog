@@ -1,17 +1,49 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { Suspense } from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import AppLayout from "./components/AppLayout";
+import { ThemeProvider } from "./Context/ThemeContext";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
+import Photos from "./Pages/Photos";
+import About from "./Pages/About";
+import Blog from "./Pages/Blog";
+import BlogDetails from "./Pages/BlogDetails";
+import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <Suspense fallback={null}>
+        <Router>
+          <AppLayout>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/blog">
+                <Blog />
+              </Route>
+              <Route path="/photos">
+                <Photos />
+              </Route>
+              <Route exact path="/blog-detail/:id">
+                <BlogDetails />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+            </Switch>
+          </AppLayout>
+        </Router>
+      </Suspense>
+    </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,0 +1,68 @@
+[{
+        "id": 1,
+        "thumbnail": "https://picsum.photos/id/237/200/300",
+        "image": "https://picsum.photos/id/237/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 2,
+        "thumbnail": "https://picsum.photos/id/1/200/300",
+        "image": "https://picsum.photos/id/1/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 3,
+        "thumbnail": "https://picsum.photos/id/25/200/300",
+        "image": "https://picsum.photos/id/25/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 4,
+        "thumbnail": "https://picsum.photos/id/3/200/300",
+        "image": "https://picsum.photos/id/3/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 5,
+        "thumbnail": "https://picsum.photos/id/31/200/300",
+        "image": "https://picsum.photos/id/31/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 6,
+        "thumbnail": "https://picsum.photos/id/69/200/300",
+        "image": "https://picsum.photos/id/69/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 7,
+        "thumbnail": "https://picsum.photos/id/50/200/300",
+        "image": "https://picsum.photos/id/50/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 8,
+        "thumbnail": "https://picsum.photos/id/23/200/300",
+        "image": "https://picsum.photos/id/23/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 9,
+        "thumbnail": "https://picsum.photos/id/40/200/300",
+        "image": "https://picsum.photos/id/40/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 10,
+        "thumbnail": "https://picsum.photos/id/80/200/300",
+        "image": "https://picsum.photos/id/80/1920/1080",
+        "title": "açıklama"
+    },
+    {
+        "id": 11,
+        "thumbnail": "https://picsum.photos/id/89/200/300",
+        "image": "https://picsum.photos/id/89/1920/1080",
+        "title": "açıklama"
+    }
+
+]

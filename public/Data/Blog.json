@@ -1,0 +1,94 @@
+[{
+        "id": 1,
+        "image": "/assets/images/blog-img.png",
+        "lang": {
+            "en": {
+                "date": "17 Şubat 2022",
+                "description": "explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation",
+                "title": "Title"
+
+            },
+            "tr": {
+                "date": "17 Şubat 2022",
+                "description": "açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama",
+                "title": "Başlık"
+            }
+        },
+
+
+        "categories": ["kategori1", "kategori2"]
+    },
+    {
+        "lang": {
+            "en": {
+                "date": "17 Şubat 2022",
+                "description": "explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation",
+                "title": "Title"
+
+            },
+            "tr": {
+                "date": "17 Şubat 2022",
+                "description": "açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama",
+                "title": "Başlık"
+            }
+        },
+        "id": 2,
+        "image": "/assets/images/blog-img.png",
+        "categories": ["kategori2"]
+    },
+    {
+        "lang": {
+            "en": {
+                "date": "17 Şubat 2022",
+                "description": "explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation",
+                "title": "Title"
+
+            },
+            "tr": {
+                "date": "17 Şubat 2022",
+                "description": "açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama",
+                "title": "Başlık"
+            }
+        },
+        "id": 3,
+        "image": "/assets/images/blog-img.png",
+        "categories": ["kategori1"]
+    },
+    {
+        "lang": {
+            "en": {
+                "date": "17 Şubat 2022",
+                "description": "explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation",
+                "title": "Title"
+
+            },
+            "tr": {
+                "date": "17 Şubat 2022",
+                "description": "açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama",
+                "title": "Başlık"
+            }
+        },
+        "id": 4,
+        "image": "/assets/images/blog-img.png",
+        "categories": ["kategori2"]
+    },
+    {
+        "lang": {
+            "en": {
+                "date": "17 Şubat 2022",
+                "description": "explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation",
+                "title": "Title"
+
+            },
+            "tr": {
+                "date": "17 Şubat 2022",
+                "description": "açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama açıklama",
+                "title": "Başlık"
+            }
+        },
+        "id": 5,
+        "image": "/assets/images/blog-img.png",
+        "categories": ["kategori2"]
+    }
+
+]
