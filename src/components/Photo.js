@@ -23,7 +23,12 @@ const StyledButtonPrev = styled.button`
   background-color: transparent;
   background-color: #fff;
   display: flex;
+  cursor: pointer;
   border-radius: 100%;
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
   @media (max-width: 600px) {
     left: 20px !important;
   }
@@ -33,6 +38,7 @@ const StyledButtonNext = styled.button`
   right: 100px;
   border: none;
   display: flex;
+  cursor: pointer;
 
   background-color: #fff;
   border-radius: 100%;
@@ -83,7 +89,12 @@ const Photo = ({ peerPageCount }) => {
   const previewImg = photos.find((photo) => photo.id === activePhotoId);
 
   const goToPrevImage = () => {
-    setActivePhotoId((currentPhotoId) => currentPhotoId - 1);
+    setActivePhotoId((currentPhotoId) => {
+      if (currentPhotoId === photos.length) {
+        return currentPhotoId;
+      }
+      return currentPhotoId - 1;
+    });
   };
 
   const goToNextImage = () => {
@@ -103,16 +114,17 @@ const Photo = ({ peerPageCount }) => {
         isOpen={isModalOpen}
         closeModal={closeModal}
       >
-        <StyledButtonPrev disabled={activePhotoId <= 0} onClick={goToPrevImage}>
+        <StyledButtonPrev
+          type="button"
+          disabled={activePhotoId <= 1}
+          onClick={goToPrevImage}
+        >
           <CircleLeft />
         </StyledButtonPrev>
         {previewImg ? (
           <Image src={previewImg.image} alt={previewImg.title} />
         ) : null}
-        <StyledButtonNext
-          style={{ position: "absolute", right: "100px" }}
-          onClick={goToNextImage}
-        >
+        <StyledButtonNext type="button" onClick={goToNextImage}>
           <CircleRight />
         </StyledButtonNext>
       </Modal>
