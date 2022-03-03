@@ -18,6 +18,10 @@ const StyledHeader = styled(Container)`
   align-items: center;
   position: relative;
   padding: 26px 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 `;
 
 const StyledDiv = styled.div`
