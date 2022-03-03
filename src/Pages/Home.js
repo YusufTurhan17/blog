@@ -6,6 +6,7 @@ import Title from "../components/Title";
 import Image from "../components/Image";
 import Button from "../components/Button";
 import ProfilePhoto1 from "../assets/images/profile1.png";
+import ProfilePhoto2 from "../assets/images/profile2.jpeg";
 import StyledLinkButton from "../components/link/LinkButton";
 import LinkButton from "../components/link/LinkButton";
 import Posts from "../components/Posts";
@@ -15,6 +16,7 @@ import Animation from "../components/Animation";
 import styled from "styled-components";
 import codeanimation from "../assets/animation/79583-webapp.json";
 import Text from "../components/Text";
+import { useThemeContext } from "../Context/ThemeContext";
 
 const StyledContainer = styled(Grid)`
   @media (max-width: 600px) {
@@ -23,6 +25,7 @@ const StyledContainer = styled(Grid)`
 `;
 const StyledImage = styled(Image)`
   display: block;
+  border-radius: 30px;
   @media (max-width: 600px) {
     display: none;
   }
@@ -30,6 +33,7 @@ const StyledImage = styled(Image)`
 
 const Home = () => {
   const { t } = useTranslation(["home"]);
+  const { isDark } = useThemeContext();
 
   return (
     <>
@@ -57,7 +61,11 @@ const Home = () => {
         <Container>
           <Grid templateColumns="1fr auto" gap="70px" alignItems="center">
             <View>
-              <StyledImage maxWidth="400px" src={ProfilePhoto1} alt="img" />
+              <StyledImage
+                maxWidth="300px"
+                src={isDark ? ProfilePhoto1 : ProfilePhoto2}
+                alt="img"
+              />
             </View>
             <View>
               <Text size="medium">{t("hakkimda")}</Text>

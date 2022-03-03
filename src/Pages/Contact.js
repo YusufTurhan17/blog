@@ -1,9 +1,6 @@
 import emailjs from "emailjs-com";
-
 import Container from "../components/Container";
-
 import Section from "../components/section/Section";
-
 import View from "../components/View";
 import Title from "../components/Title";
 import TextArea from "../components/TextArea";
@@ -27,6 +24,7 @@ const StyledContainer = styled(Grid)`
 
 const Contact = () => {
   const { t } = useTranslation();
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -46,6 +44,7 @@ const Contact = () => {
           alert("Mesajınız Gönderilemedi!");
         }
       );
+    e.target.reset();
   };
 
   return (
