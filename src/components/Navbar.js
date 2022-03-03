@@ -41,6 +41,7 @@ const StyledLink = styled(Link)`
       margin-left: 0px;
     }
     margin-bottom: 20px;
+    font-size: 17px;
   }
 `;
 
