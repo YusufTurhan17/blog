@@ -11,6 +11,9 @@ const StyledLinkButton = styled(Link)`
   font-size: 22px;
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+    font-size: 17px;
+  }
 `;
 
 const LinkButton = ({ children, className, to }) => {
