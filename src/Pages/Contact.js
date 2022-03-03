@@ -27,6 +27,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         "gmail",
@@ -70,16 +71,27 @@ const Contact = () => {
                       type="text"
                       name="fullname"
                       placeholder={t("adsoyad")}
+                      required
                     />
                   </FormElement>
                   <FormElement justifyContent="center" label={t("email")}>
-                    <Input type="email" name="email" placeholder={t("email")} />
+                    <Input
+                      type="email"
+                      name="email"
+                      placeholder={t("email")}
+                      required
+                    />
                   </FormElement>
                   <FormElement justifyContent="center" label={t("konu")}>
-                    <Input type="text" name="subject" placeholder={t("konu")} />
+                    <Input
+                      type="text"
+                      name="subject"
+                      placeholder={t("konu")}
+                      required
+                    />
                   </FormElement>
                   <FormElement justifyContent="center" label={t("mesajiniz")}>
-                    <TextArea name="message" label={t("mesajiniz")} />
+                    <TextArea name="message" label={t("mesajiniz")} required />
                   </FormElement>
                 </View>
                 <View>
