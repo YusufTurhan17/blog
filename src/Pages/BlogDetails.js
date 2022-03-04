@@ -18,6 +18,9 @@ const StyledBlogLink = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  @media (max-width: 600px) {
+    font-size: 17px;
+  }
 `;
 
 const BlogDetails = () => {
